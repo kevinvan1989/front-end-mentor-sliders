@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@400;700&display=swap");
+*:focus {
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 90vw;
+  text-align: center;
+  font-family: 'Inter', serif;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("./images/pattern-curve.svg") no-repeat;
+  background-size: 70%;
+  background-position: left bottom;
+  z-index: -1;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body #nameDisplay {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+body #functionDisplay {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #babacf;
+}
+
+body .container aside {
+  position: relative;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+body .container aside::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("./images/pattern-bg.svg");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body .container aside .navigation {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 84px;
+  border-radius: 40px;
+  z-index: 1;
+  -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+body .container aside .icon {
+  padding: 15px;
+  background: white;
+  display: inline-block;
+}
+
+body .container aside .icon--previous {
+  border-radius: 40px 0px 0px 40px;
+}
+
+body .container aside .icon--next {
+  border-radius: 0px 40px 40px 0px;
+}
+
+body .container .profile-pic {
+  max-width: 16rem;
+  display: block;
+  margin: auto;
+  /* margin-right: 0px; */
+  text-align: justify;
+  float: center;
+  /* position: relative; */
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+body .container .txt-content {
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+}
+
+body .container .txt-content::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  background: url("./images/pattern-quotes.svg") center no-repeat;
+  background-size: 75px;
+  height: 150px;
+  width: 100%;
+}
+
+body .container .attribution {
+  margin-top: 4rem;
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .body {
+    width: 90vw;
+    height: 100vh;
+  }
+  #tanya,
+  #john {
+    margin: auto;
+  }
+  .slider__slide {
+    background: #fff;
+    margin: 10rem auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    max-width: 900px;
+  }
+  .slider .testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
+  }
+  .slider .testimonial aside, .slider .testimonial__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider .testimonial aside {
+    left: -100px;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

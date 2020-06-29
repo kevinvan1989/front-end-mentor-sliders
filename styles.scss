@@ -1,0 +1,178 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$darkBlue: #202046;
+$grayBlue: #babacf;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@400;700&display=swap');
+
+*:focus {
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 90vw;
+  text-align: center;
+  font-family: 'Inter', serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  background: url('./images/pattern-curve.svg') no-repeat;
+  background-size: 70%;
+  background-position: left bottom;
+  z-index: -1;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  #nameDisplay {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #functionDisplay {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: $grayBlue;
+  }
+
+  .container {
+    aside {
+      position: relative;
+      margin: 1rem auto;
+      padding: 1rem 0;
+      width: 100%;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('./images/pattern-bg.svg');
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .navigation {
+        position: absolute;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        width: 84px;
+        border-radius: 40px;
+        z-index: 1;
+        box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      .icon {
+        padding: 15px;
+        // width: 40px;
+        // height: 40px;
+        background: white;
+        display: inline-block;
+
+
+        &--previous {
+          border-radius: 40px 0px 0px 40px;
+          // box-shadow: -7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        &--next {
+          border-radius: 0px 40px 40px 0px;
+          // box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+
+
+    .profile-pic {
+      max-width: 16rem;
+      display: block;
+      margin: auto;
+      // padding-top: 1rem ;
+      /* margin-right: 0px; */
+      text-align: justify;
+      float: center;
+      /* position: relative; */
+      border-radius: 10px;
+      -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .txt-content {
+      padding-top: 50px;
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        background: url('./images/pattern-quotes.svg') center no-repeat;
+        background-size: 75px;
+        height: 150px;
+        width: 100%;
+      }
+    }
+
+    .attribution {
+      margin-top: 4rem;
+      font-size: .8rem;
+    }
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .body {
+    width: 90vw;
+    height: 100vh;
+  }
+
+  #tanya,
+  #john {
+    margin: auto;
+  }
+
+  .slider__slide {
+    background: #fff;
+    margin: 10rem auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    max-width: 900px;
+  }
+
+  .slider .testimonial {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+
+    aside,
+    &__info {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+
+    aside {
+      left: -100px;
+      position: relative;
+    }
+  }
+}
